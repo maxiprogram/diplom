@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ico/eraser.png</file>
+        <file>ico/notebook--minus.png</file>
+        <file>ico/notebook--pencil.png</file>
+        <file>ico/notebook--plus.png</file>
+        <file>ico/notebooks.png</file>
+        <file>ico/standardbutton-save-16.png</file>
+        <file>ico/ico-refresh.png</file>
+        <file>ico/ball_green.png</file>
+        <file>ico/ball_red.png</file>
+        <file>ico/cross.png</file>
+        <file>ico/application-blue.png</file>
+        <file>ico/magnifier.png</file>
+        <file>ico/imac.png</file>
+        <file>ico/file.png</file>
+        <file>ico/folder-horizontal.png</file>
+        <file>ico/drive.png</file>
+        <file>ico/download-linux.png</file>
+        <file>ico/upload-linux.png</file>
+        <file>ico/DB.png</file>
+        <file>ico/user blue.png</file>
+        <file>ico/windowsrestart_7374.png</file>
+        <file>ico/gnome-shutdown.png</file>
+        <file>ico/gnome-logout_5442.png</file>
+        <file>ico/mail.png</file>
+        <file>ico/cross-script.png</file>
+    </qresource>
+</RCC>

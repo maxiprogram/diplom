@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ico/imac.png</file>
+        <file>ico/ball_green.png</file>
+        <file>ico/ball_red.png</file>
+    </qresource>
+</RCC>

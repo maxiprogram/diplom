@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainForm</class>
+ <widget class="QMainWindow" name="MainForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>784</width>
+    <height>537</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Система учёта и администирования персональных компьютеров ОАО &quot;Полоцкий КХП&quot;</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/ico/imac.png</normaloff>:/ico/imac.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_8">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_db">
+       <attribute name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/ico/DB.png</normaloff>:/ico/DB.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>База данных</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTabWidget" name="tabWidget_2">
+          <property name="tabPosition">
+           <enum>QTabWidget::North</enum>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_device">
+           <attribute name="title">
+            <string>Устройства</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QSplitter" name="splitter">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <widget class="QTableView" name="table_device">
+               <property name="sortingEnabled">
+                <bool>true</bool>
+               </property>
+               <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                <bool>true</bool>
+               </attribute>
+              </widget>
+              <widget class="QTabWidget" name="tabWidget_3">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="tab_characteristic">
+                <attribute name="title">
+                 <string>Характеристики</string>
+                </attribute>
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QTableView" name="table_characteristic">
+                     <property name="sortingEnabled">
+                      <bool>true</bool>
+                     </property>
+                     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                      <bool>true</bool>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_7">
+                     <item>
+                      <widget class="QPushButton" name="actionAddDop">
+                       <property name="text">
+                        <string>Добавить</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="resource.qrc">
+                         <normaloff>:/ico/notebook--plus.png</normaloff>:/ico/notebook--plus.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="actionCopyDop">
+                       <property name="text">
+                        <string>Дублировать</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="resource.qrc">
+                         <normaloff>:/ico/notebooks.png</normaloff>:/ico/notebooks.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="actionDeleteDop">
+                       <property name="text">
+                        <string>Удалить</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="resource.qrc">
+                         <normaloff>:/ico/notebook--minus.png</normaloff>:/ico/notebook--minus.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="actionDeleteAllDop">
+                       <property name="text">
+                        <string>Удалить все</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="resource.qrc">
+                         <normaloff>:/ico/eraser.png</normaloff>:/ico/eraser.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="actionSaveDop">
+                       <property name="text">
+                        <string>Сохранить</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="resource.qrc">
+                         <normaloff>:/ico/standardbutton-save-16.png</normaloff>:/ico/standardbutton-save-16.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="tab_repair">
+                <attribute name="title">
+                 <string>Ремонты и обслуживание</string>
+                </attribute>
+                <layout class="QVBoxLayout" name="verticalLayout_16">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <item>
+                    <widget class="QTableView" name="table_repair">
+                     <property name="sortingEnabled">
+                      <bool>true</bool>
+                     </property>
+                     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                      <bool>true</bool>
+                     </attribute>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_9">
+                     <item>
+                      <widget class="QPushButton" name="actionAddDop2">
+                       <property name="text">
+                        <string>Добавить</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="resource.qrc">
+                         <normaloff>:/ico/notebook--plus.png</normaloff>:/ico/notebook--plus.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="actionCopyDop2">
+                       <property name="text">
+                        <string>Дублировать</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="resource.qrc">
+                         <normaloff>:/ico/notebooks.png</normaloff>:/ico/notebooks.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="actionDeleteDop2">
+                       <property name="text">
+                        <string>Удалить</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="resource.qrc">
+                         <normaloff>:/ico/notebook--minus.png</normaloff>:/ico/notebook--minus.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="actionDeleteAllDop2">
+                       <property name="text">
+                        <string>Удалить все</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="resource.qrc">
+                         <normaloff>:/ico/eraser.png</normaloff>:/ico/eraser.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="actionSaveDop2">
+                       <property name="text">
+                        <string>Сохранить</string>
+                       </property>
+                       <property name="icon">
+                        <iconset resource="resource.qrc">
+                         <normaloff>:/ico/standardbutton-save-16.png</normaloff>:/ico/standardbutton-save-16.png</iconset>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_type_device">
+           <attribute name="title">
+            <string>Тип устройства</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QTableView" name="table_type_device">
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
+              <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+               <bool>true</bool>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_persona">
+           <attribute name="title">
+            <string>Сотрудники</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QTableView" name="table_persona">
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_specialty">
+           <attribute name="title">
+            <string>Должности</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QTableView" name="table_specialty">
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
+              <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+               <bool>true</bool>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_subdivision">
+           <attribute name="title">
+            <string>Подразделения</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QTableView" name="table_subdivision">
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
+              <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+               <bool>true</bool>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_admin">
+       <attribute name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/ico/user blue.png</normaloff>:/ico/user blue.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Администрирование</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <widget class="QTabWidget" name="tabWidget_4">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_online">
+           <attribute name="title">
+            <string>Устройства Online</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <item>
+             <widget class="QTableWidget" name="table_online">
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="selectionMode">
+               <enum>QAbstractItemView::SingleSelection</enum>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectRows</enum>
+              </property>
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
+              <column>
+               <property name="text">
+                <string>Наименование</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Инв. номер</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ФИО</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>HOST-имя</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>IP-адрес</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Online</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Готов</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_file">
+           <attribute name="title">
+            <string>Файловый менеджер</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_15">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <item>
+                 <widget class="QLabel" name="label_path">
+                  <property name="font">
+                   <font>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>Текущий путь: </string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="current_path">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="table_file">
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+                <property name="selectionMode">
+                 <enum>QAbstractItemView::SingleSelection</enum>
+                </property>
+                <property name="selectionBehavior">
+                 <enum>QAbstractItemView::SelectRows</enum>
+                </property>
+                <property name="sortingEnabled">
+                 <bool>true</bool>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>Наименование</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Инв.номер</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>ФИО</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>HOST-имя</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>IP-адрес</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_process">
+           <attribute name="title">
+            <string>Менеджер процессов</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_12">
+            <item>
+             <widget class="QTableWidget" name="table_process">
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="selectionMode">
+               <enum>QAbstractItemView::SingleSelection</enum>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectRows</enum>
+              </property>
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
+              <column>
+               <property name="text">
+                <string>Наименование</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Инв.номер</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ФИО</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>HOST-имя</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>IP-адрес</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>784</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="actionImport"/>
+    <addaction name="actionExport"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Сервис</string>
+    </property>
+    <addaction name="actionSetting"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Действия с данными</string>
+    </property>
+    <addaction name="actionAddMenu"/>
+    <addaction name="actionCopyMenu"/>
+    <addaction name="actionDeleteMenu"/>
+    <addaction name="actionDeleteallMenu"/>
+    <addaction name="separator"/>
+    <addaction name="actionSaveMenu"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>Администрирование</string>
+    </property>
+    <addaction name="actionRefreshMenu"/>
+    <addaction name="separator"/>
+    <addaction name="actionMessageMenu"/>
+    <addaction name="actionPowerMenu"/>
+    <addaction name="separator"/>
+    <addaction name="actionRootMenu"/>
+    <addaction name="actionDownloadMenu"/>
+    <addaction name="actionUploadMenu"/>
+    <addaction name="actionDeleteFileMenu"/>
+    <addaction name="separator"/>
+    <addaction name="actionNewProcessMenu"/>
+    <addaction name="actionKillProcessMenu"/>
+    <addaction name="actionRefreshProcessMenu"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>О программе</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_db">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAdd"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionDelete"/>
+   <addaction name="actionDeleteall"/>
+   <addaction name="actionSave"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_admin">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionRefresh"/>
+   <addaction name="separator"/>
+   <addaction name="actionMessage"/>
+   <addaction name="actionPower"/>
+   <addaction name="separator"/>
+   <addaction name="actionRoot"/>
+   <addaction name="actionDownload"/>
+   <addaction name="actionUpload"/>
+   <addaction name="actionDeleteFile"/>
+   <addaction name="separator"/>
+   <addaction name="actionNewProcess"/>
+   <addaction name="actionKillProcess"/>
+   <addaction name="actionRefreshProcess"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <action name="actionAdd">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/notebook--plus.png</normaloff>:/ico/notebook--plus.png</iconset>
+   </property>
+   <property name="text">
+    <string>add</string>
+   </property>
+   <property name="toolTip">
+    <string>Добавить новую запись</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/notebooks.png</normaloff>:/ico/notebooks.png</iconset>
+   </property>
+   <property name="text">
+    <string>copy</string>
+   </property>
+   <property name="toolTip">
+    <string>Дублировать</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/notebook--minus.png</normaloff>:/ico/notebook--minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>delete</string>
+   </property>
+   <property name="toolTip">
+    <string>Удалить</string>
+   </property>
+  </action>
+  <action name="actionDeleteall">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/eraser.png</normaloff>:/ico/eraser.png</iconset>
+   </property>
+   <property name="text">
+    <string>deleteall</string>
+   </property>
+   <property name="toolTip">
+    <string>Удалить все</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Импорт БД</string>
+   </property>
+  </action>
+  <action name="actionExport">
+   <property name="text">
+    <string>Экспорт БД</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/standardbutton-save-16.png</normaloff>:/ico/standardbutton-save-16.png</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+   <property name="toolTip">
+    <string>Сохранить изменения</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/magnifier.png</normaloff>:/ico/magnifier.png</iconset>
+   </property>
+   <property name="text">
+    <string>refresh</string>
+   </property>
+   <property name="toolTip">
+    <string>Сканировать сеть</string>
+   </property>
+  </action>
+  <action name="actionNewProcess">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/application-blue.png</normaloff>:/ico/application-blue.png</iconset>
+   </property>
+   <property name="text">
+    <string>NewProcess</string>
+   </property>
+   <property name="toolTip">
+    <string>Запустить процесс</string>
+   </property>
+  </action>
+  <action name="actionKillProcess">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/cross.png</normaloff>:/ico/cross.png</iconset>
+   </property>
+   <property name="text">
+    <string>KillProcess</string>
+   </property>
+   <property name="toolTip">
+    <string>Завершить процесс</string>
+   </property>
+  </action>
+  <action name="actionRefreshProcess">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/ico-refresh.png</normaloff>:/ico/ico-refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>RefreshProcess</string>
+   </property>
+   <property name="toolTip">
+    <string>Обновить список процессов</string>
+   </property>
+  </action>
+  <action name="actionRoot">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/drive.png</normaloff>:/ico/drive.png</iconset>
+   </property>
+   <property name="text">
+    <string>Root</string>
+   </property>
+   <property name="toolTip">
+    <string>Перейти в корень</string>
+   </property>
+  </action>
+  <action name="actionDownload">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/download-linux.png</normaloff>:/ico/download-linux.png</iconset>
+   </property>
+   <property name="text">
+    <string>Download</string>
+   </property>
+   <property name="toolTip">
+    <string>Скачать файл</string>
+   </property>
+  </action>
+  <action name="actionUpload">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/upload-linux.png</normaloff>:/ico/upload-linux.png</iconset>
+   </property>
+   <property name="text">
+    <string>Upload</string>
+   </property>
+   <property name="toolTip">
+    <string>Загрузить файл</string>
+   </property>
+  </action>
+  <action name="actionSetting">
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+  </action>
+  <action name="actionPower">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/gnome-shutdown.png</normaloff>:/ico/gnome-shutdown.png</iconset>
+   </property>
+   <property name="text">
+    <string>Power</string>
+   </property>
+   <property name="toolTip">
+    <string>Выключение ПК</string>
+   </property>
+  </action>
+  <action name="actionMessage">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/mail.png</normaloff>:/ico/mail.png</iconset>
+   </property>
+   <property name="text">
+    <string>Message</string>
+   </property>
+   <property name="toolTip">
+    <string>Отправить сообщение</string>
+   </property>
+  </action>
+  <action name="actionDeleteFile">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/ico/cross-script.png</normaloff>:/ico/cross-script.png</iconset>
+   </property>
+   <property name="text">
+    <string>DeleteFile</string>
+   </property>
+   <property name="toolTip">
+    <string>Удалить файл</string>
+   </property>
+  </action>
+  <action name="actionAddMenu">
+   <property name="text">
+    <string>Добавить запись</string>
+   </property>
+  </action>
+  <action name="actionCopyMenu">
+   <property name="text">
+    <string>Дублировать запись</string>
+   </property>
+  </action>
+  <action name="actionDeleteMenu">
+   <property name="text">
+    <string>Удалить запись</string>
+   </property>
+  </action>
+  <action name="actionDeleteallMenu">
+   <property name="text">
+    <string>Удалить все записи</string>
+   </property>
+  </action>
+  <action name="actionSaveMenu">
+   <property name="text">
+    <string>Сохранить изменения</string>
+   </property>
+  </action>
+  <action name="actionRefreshMenu">
+   <property name="text">
+    <string>Сканировать сеть</string>
+   </property>
+  </action>
+  <action name="actionMessageMenu">
+   <property name="text">
+    <string>Отправить сообщение</string>
+   </property>
+  </action>
+  <action name="actionPowerMenu">
+   <property name="text">
+    <string>Выключить ПК</string>
+   </property>
+  </action>
+  <action name="actionRootMenu">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Перейти в корень</string>
+   </property>
+  </action>
+  <action name="actionDownloadMenu">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Скачать файл</string>
+   </property>
+  </action>
+  <action name="actionUploadMenu">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Загрузить файл</string>
+   </property>
+  </action>
+  <action name="actionDeleteFileMenu">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Удалить файл</string>
+   </property>
+  </action>
+  <action name="actionNewProcessMenu">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Запустить процесс</string>
+   </property>
+  </action>
+  <action name="actionKillProcessMenu">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Завершить процесс</string>
+   </property>
+  </action>
+  <action name="actionRefreshProcessMenu">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Обновить список процессов</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>Разработчик</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
